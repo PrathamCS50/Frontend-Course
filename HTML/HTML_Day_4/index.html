@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 3px solid brown;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <caption>This is the table to learn new concepts</caption>
+    <table>
+        <!-- SEO -->
+        <thead>
+            <tr>
+                <th>S. No.</th>
+                <th>Name</th>
+                <th>Roll No.</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">RowSpan</td>
+                <td>Pratham</td>
+                <td>42</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>Pratham</td>
+                <td>42</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>Pratham</td>
+                <td>42</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2" style="text-align: center;">ColSpan</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pratham</td>
+                <td>21</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pratham</td>
+                <td rowspan="2" colspan="2">Row and Col Span</td>
+                <!-- <td>Male</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pratham</td>
+                <!-- <td>21</td> -->
+                <!-- <td>Male</td> -->
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+        </tbody>
+        <!-- SEO optimization  -->
+    </table>
+
+    <hr>
+    <hr>
+    <hr>
+<caption>8 x 3 Table </caption>
+    <table>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+        <tr>
+            <td>val 1</td>
+            <td>val 2</td>
+            <td>val 3</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
