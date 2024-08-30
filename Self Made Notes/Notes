@@ -16,4 +16,15 @@ INDEX
 6. Integrating sheets db api with forms 
 7. iFrames
 8. Portfolio -> HTML vs HTML5
+9.
+10. test
+
+HTML Days OVER
+CSS STARTS
+
+11. Introduction to CSS -> Inline, internal, External CSS, Browser Applies css to code (Highest priority)
+Browser > (Inline > External) [Based on the writing practices][Call Order]{No Priority} > Internal
+Cascading Style Sheet -> Cascading means heirarchial manner.
+5 Rules :- + Priority
+Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS Rule -> Imoprtant Specific Rule 
 
