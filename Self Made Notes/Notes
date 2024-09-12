@@ -23,8 +23,14 @@ HTML Days OVER
 CSS STARTS
 
 11. Introduction to CSS -> Inline, internal, External CSS, Browser Applies css to code (Highest priority)
-Browser > (Inline > External) [Based on the writing practices][Call Order]{No Priority} > Internal
+Browser > Inline > (Internal >= External) [Based on the writing practices][Call Order]{No Priority} 
+
+Browser > !important > Inline CSS > Internal/External CSS (later-written > earlier-written) > Browser defaults
+
 Cascading Style Sheet -> Cascading means heirarchial manner.
 5 Rules :- + Priority
 Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS Rule -> Imoprtant Specific Rule 
 
+12. Selectors -> Priority :  Universal -> Element -> class -> ID Selector -> Inline CSS -> !important
+
+13. CSS BOX Model
