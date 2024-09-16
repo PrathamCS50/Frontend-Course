@@ -33,4 +33,6 @@ Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS 
 
 12. Selectors -> Priority :  Universal -> Element -> class -> ID Selector -> Inline CSS -> !important
 
-13. CSS BOX Model
+13. CSS BOX Model -> Content , Padding, Border, Margin -> 
+Display properties : Inline
+Border-box : achieve total height and width

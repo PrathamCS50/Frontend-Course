@@ -1,0 +1,41 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+.box1{
+    border:15px solid red;
+    padding: 62px;
+
+    width: fit-content;
+    height: auto;
+    box-sizing:border-box;
+}
+.box2{
+    border:15px solid red;
+    padding: 31px;
+    margin: 31px;
+    height: auto;
+    box-sizing:border-box; 
+    width: 110px;
+}
+.box3{
+    border:15px solid red;
+    padding: 31px;
+    margin: 31px;
+    width: fit-content;
+    height: auto;
+    box-sizing:border-box;
+}
+.box4{
+    border:15px solid red;
+    padding: 31px;
+    margin: 31px;
+    width: fit-content;
+    height: auto;
+    box-sizing:border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
