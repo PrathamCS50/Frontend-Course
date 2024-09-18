@@ -36,3 +36,13 @@ Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS 
 13. CSS BOX Model -> Content , Padding, Border, Margin -> 
 Display properties : Inline
 Border-box : achieve total height and width
+
+14.1 CSS Frameworks
+    Some css Frameworks to work better and faster 
+        1. Chakra UI - Mostly React 
+        2. Shadcn UI - Mostly NextJS
+        3. Ant Design 
+        4. Material UI Design - MUI
+        5. Tailwind CSS
+
+14.2 Use Color hunt to find color combinations 

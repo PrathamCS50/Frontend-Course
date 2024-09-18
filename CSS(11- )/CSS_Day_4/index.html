@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1 {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        #id2 {
+            background: linear-gradient(to bottom, red, orange, yellow);
+        }
+
+        #id3 {
+            background: linear-gradient(to top, rgb(95, 244, 95), rgb(79, 79, 242), rgb(235, 49, 235));
+            color: whitesmoke;
+        }
+
+        #id4 {
+            background: radial-gradient(circle, red, yellow, green, blue, indigo, violet);
+            height: 100px;
+            color: white;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #id5 {
+            background: radial-gradient(ellipse, rgb(95, 244, 95), rgb(79, 79, 242), rgb(235, 49, 235));
+            display: flex;
+            height: 100px;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 470px;
+            font-size: 20px;
+        }
+
+        #id6 {
+            background: radial-gradient(farthest-side, rgb(95, 244, 95), rgb(79, 79, 242), rgb(235, 49, 235));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 100px;
+            width: 470px;
+            margin: 10px;
+        }
+
+        #id7 {
+            background: radial-gradient(farthest-corner, rgb(95, 244, 95), rgb(79, 79, 242), rgb(235, 49, 235));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 100px;
+            width: 470px;
+            margin: 10px;
+        }
+        .background{
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            background-repeat: no-repeat;
+            /* background-size: 100%;   */
+            /* object-fit:fill; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div>
+            <pre>
+        Some css Frameworks to work better and faster 
+        1. Chakra UI - Mostly React 
+        2. Shadcn UI - Mostly NextJS
+        3. Ant Design 
+        4. Material UI Design - MUI
+        5. Tailwind CSS
+    </pre>
+        </div>
+        <div class="gradient" id="id1">
+            <h2>This is the linear Gradient Right </h2>
+        </div>
+        <div class="gradient" id="id2">
+            <h2>This is the linear Gradient Bottom</h2>
+        </div>
+        <div class="gradient" id="id3">
+            <h2>This is the linear Gradient Top</h2>
+        </div>
+        <div class="gradient" id="id4">
+            <h2>This is the linear Gradient Top</h2>
+        </div>
+        <div class="gradient" id="id5">
+            <h2>This is the linear Gradient Top</h2>
+        </div>
+        <div class="gradient" id="id6">
+            <h2>This is the linear Gradient Top</h2>
+        </div>
+        <div class="gradient" id="id7">
+            <h2>This is the linear Gradient Top</h2>
+        </div>
+    </div>
+</body>
+
+</html>
