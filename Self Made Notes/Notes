@@ -1,19 +1,18 @@
 SEO Optimized
-H1 tag is used for SEO Optimization 
+H1 tag is used for SEO Optimization
+
 <thead>, <tbody>, <tfoot>, <caption>, 
 With iFrames , we can integrate anything , like any 3rd party application , website, component | But can increadse loading time | Security breach | MOst of the cases used in attaching videos in websites | widgets | Advertisement
 
-
-
-
-
 INDEX
+
 1. All Headings
 2. Block Level & Inline Elements | SEO | tags-> <a></a>, p, span, image(img)
 3. SEO | Google Bot Crawlers ol, ul
-4. Tables colspan, rowspan | Periodic Table
-5. Forms -> all inputs and register button 
-6. Integrating sheets db api with forms 
+4. Tables colspan, rowspan
+   Periodic Table Project
+5. Forms -> all inputs and register button
+6. Integrating sheets db api with forms
 7. iFrames
 8. Portfolio -> HTML vs HTML5
 9.
@@ -23,26 +22,51 @@ HTML Days OVER
 CSS STARTS
 
 11. Introduction to CSS -> Inline, internal, External CSS, Browser Applies css to code (Highest priority)
-Browser > Inline > (Internal >= External) [Based on the writing practices][Call Order]{No Priority} 
+    Browser > Inline > (Internal >= External) [Based on the writing practices][Call Order]{No Priority}
 
 Browser > !important > Inline CSS > Internal/External CSS (later-written > earlier-written) > Browser defaults
 
 Cascading Style Sheet -> Cascading means heirarchial manner.
 5 Rules :- + Priority
-Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS Rule -> Imoprtant Specific Rule 
+Universal Rule -> Element Specific Rule -> Class/ID Specific Rule -> Inline CSS Rule -> Imoprtant Specific Rule
 
-12. Selectors -> Priority :  Universal -> Element -> class -> ID Selector -> Inline CSS -> !important
+12. Selectors -> Priority : Universal -> Element -> class -> ID Selector -> Inline CSS -> !important
 
-13. CSS BOX Model -> Content , Padding, Border, Margin -> 
-Display properties : Inline
-Border-box : achieve total height and width
+13. CSS BOX Model -> Content , Padding, Border, Margin ->
+    Display properties : Inline
+    Border-box : achieve total height and width
 
 14.1 CSS Frameworks
-    Some css Frameworks to work better and faster 
-        1. Chakra UI - Mostly React 
-        2. Shadcn UI - Mostly NextJS
-        3. Ant Design 
-        4. Material UI Design - MUI
-        5. Tailwind CSS
+Some css Frameworks to work better and faster 1. Chakra UI - Mostly React 2. Shadcn UI - Mostly NextJS 3. Ant Design 4. Material UI Design - MUI 5. Tailwind CSS
 
-14.2 Use Color hunt to find color combinations 
+14.2 Use "Color hunt" to find color combinations
+
+15. CSS Gradient Project
+
+16. Inline elements dont depend/respect height width and margin and certain more properties. And therefore sometimes these properties are not applied to inline level elements
+    Whereas Block level elements respect all the properties
+    We can change inline to block level elements via using display: block.
+
+Block Level Elements:
+1. h1 to h6
+2. div tags
+3. article tag
+4. hr and br tag
+5. nav
+6. footer
+7. section
+8. main 
+9. aside 
+10. ul and ol
+
+Inline Elements:
+1. span
+2. label
+3. input
+4. img
+5. p
+6. video and audio 
+7. button
+8. li tag
+9. a tag
+10. sub and sup tag

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: repeating-linear-gradient(45deg, red, orange);
+        }
+
+        .container {
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+            width: 40vw;
+            height: 50vh;
+            padding: 20px;
+            background-color: rgb(220, 201, 201);
+            box-shadow: 0 0 10px rgb(247, 111, 111);
+        }
+
+        .container-text {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgb(254, 83, 83);
+        }
+
+        .colorpickerbox {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #colorpicker{
+            visibility: hidden;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .color-label {
+            background-color: white;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgb(254, 83, 83);
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            height: 100px;
+            width: 100px;
+            transition: transform 0.3s ease;
+        }
+        .color-label:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-text">Choose Your Gradient</div>
+        <div class="colorpickerbox">
+            <input type="color" id="colorpicker" class="colorinput">
+            <label for="colorpicker" class="color-label">
+                <span id="colorcode">#FFFF</span>
+            </label>
+        </div>
+        <div class="info">
+            Gradient Color Change Hoga Apna, whenever as you pick the color of your Gradient.
+        </div>
+    </div>
+
+    <script>
+        const colorPicker = document.getElementById('colorpicker');
+        const colorCode = document.getElementById('colorcode');
+        colorPicker.addEventListener('input', function () {
+            const color = colorPicker.value;
+            colorCode.textContent = color.toUpperCase();
+            document.body.style.background = `linear-gradient(45deg, ${color}, ${color}50)`;
+        });
+    </script>
+
+</body>
+
+</html>
