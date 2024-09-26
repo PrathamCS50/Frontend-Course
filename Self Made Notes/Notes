@@ -73,3 +73,26 @@ Inline Elements:
 
 
 17. Smooth Hover, After, hover properties, Input box CSS , caret
+
+18. CSS Responsiveness
+1. Absolute values or sizes are fixed or constant. Which doesn't react as per the size changes of display 
+2. Relative values or sizes are dynamic means it will react as per the display size changes and the size will apply as per it's parent size or overall display size.
+3. Relative value like % applied to any element are react as per it's parent element not the device screen size. 
+For e.x: if we provide 100% value to height or width then it will check what is its parent element size is? If no parent then it checks the device width or height else it will apply as per its parent height or width.
+4. Relative value like vh : is called viewport height it is used to style or apply height to any element and this unit will always be calculated as per the device screen height doesn't matter what  height size it's  parent has.
+5. Relative value like vw:
+The vw is stands for viewport width which is used to apply width to any element. Same as earlier vh this is also provide width size to element as per the width of the device screen by ignoring what's width size does its parent has.
+6. Relative units for font sizes:
+ - em:  this is the dynamic unit which is used to apply to fonts. em is calculated as 2 times to it's parent element font size. By default all text size is 16px so when we use 2em the size will be 2x of 16px.
+The h1 tag has default style is font-size: 2em; which is 32px.
+So, anytime you use em then always check what is your parent element is set font size as ?.
+
+- rem:  this unit is same as em but it's calculated based on the root element which is html means doesn't matter what size is your parent element has the rem will be applied based on what font size does the html has.
+
+h1 is 32px which is 2em
+h2 is 24px which is 1.5em
+h3 is 18.72px which is 1.17em
+h4 is 16px which is null 
+h5 is 13.28px which is  0.83em
+h6 is 10.72px which is 0.67em
+h4 in my browser size is not mentioned in em

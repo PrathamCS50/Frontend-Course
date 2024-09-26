@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 75vh;
+            width: 80vw;
+            margin: auto;
+            border-radius: 20px;
+            border: 2px solid green;
+        }
+
+        .left-container {
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .right-container {
+            border: 2px solid yellow;
+            width: 50%;
+        }
+
+        #h1 {
+            color: black;
+            text-shadow: 1px 1px 20px red;
+            display: flex;
+            justify-content: center;
+        }
+
+        #h2 {
+            color: black;
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+        }
+
+        .colorpicker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8%;
+            margin-inline: auto;
+            cursor: pointer;
+        }
+
+        #color-picker {
+            height: 50px;
+            width: 50px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .gradient-box-class {
+            margin-top: 3%;
+            margin-inline: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+        }
+
+        .gradient-box {
+            margin: 5px;
+            width: 50%;
+            margin-inline: auto;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .info {
+            width: 80%;
+            margin-inline: auto;
+            margin-top: 20px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="left-container">
+                <div class="heading" id="h1">
+                    <h1>Choose your Color Gradient</h1>
+                </div>
+                <div class="colorpicker">
+                    <input type="color" id="color-picker">
+                    <label for="color-picker-text">
+                        <span id="color-text">#FFFFFF</span>
+                    </label>
+                </div>
+                <div class="gradient-box-class">
+                    <button type="button" class="gradient-box" id="linear-gradient">Linear Gradient</button>
+                    <button type="button" class="gradient-box" id="radial-gradient">Radial Gradient</button>
+                    <button type="button" class="gradient-box" id="conic-gradient">Conic Gradient</button>
+                    <button type="button" class="gradient-box" id="noise-gradient">Noise Gradient</button>
+                    <button type="button" class="gradient-box" id="mesh-gradient">Mesh Gradient</button>
+                    <button type="button" class="gradient-box" id="diamond-gradient">Diamond Gradient</button>
+                </div>
+            </div>
+
+            <div class="right-container">
+                <div class="heading" id="h2">
+                    <h1>Coding Wallah Team</h1>
+                </div>
+                <div class="info">
+                    Coding Wallah Sir aka <mark>Shivam Sharma</mark> is the best of all not because of any specialty
+                    but the way of
+                    teaching, which makes us think beyond our minds and not spoon-feeding.
+                    Sometimes it is annoying but in the long term, it is the only basic step.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const colorPicker = document.getElementById('color-picker');
+        const colorCode = document.getElementById('color-text');
+
+        colorPicker.addEventListener('input', function () {
+            const selectedColor = colorPicker.value.toUpperCase();
+            colorCode.textContent = selectedColor;
+            document.body.style.background = `linear-gradient(45deg, ${selectedColor}, ${selectedColor}50)`;
+            
+        });
+    </script>
+
+</body>
+
+</html>
